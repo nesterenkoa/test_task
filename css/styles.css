@@ -5,9 +5,9 @@
 
 
 .d-flex{
+  min-height: 600px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .decor-line{
   background: url("../img/line-color.png") no-repeat;
@@ -18,6 +18,18 @@
   height:20px;
 }
 
+.line{
+  width: 100%;
+  height: 15px;
+  background-size: contain;
+  background: url("../img/Group 124.png") no-repeat;
+}
+
+.line-left{
+   transform: rotate(180deg);
+}
+
+
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -25,8 +37,13 @@
 }
 
 .padding{
-  padding: 10%;
-  padding-bottom: 0;
+  padding: 5% 10%;
+  /*padding-bottom: 0;*/
+/*}*/
+}
+
+.margin{
+  margin: 8% 0;
 }
 
 .logo{
@@ -72,7 +89,7 @@
   display: flex;
   justify-content: space-around;
   padding: 50px 0;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
 .item-specifications-product{
@@ -82,13 +99,39 @@
   padding: 4px;
 }
 
-.decor-line-small{
-  width: 100%;
-  height: 15px;
-  background-size: contain;
+/*.decor-line-left:after{*/
+  /*content: '';*/
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*height: 15px;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*background-size: contain;*/
+  /*!*transform: rotate(180deg);*!*/
+  /*background: url("../img/Group 124.png") no-repeat;*/
+/*}*/
+
+/*.decor-line-right:after{*/
+  /*content: '';*/
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*height: 15px;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  /*background-size: contain;*/
   /*transform: rotate(180deg);*/
-  background: url("../img/Group 124.png") no-repeat;
-}
+  /*background: url("../img/Group 124.png") no-repeat;*/
+/*}*/
+
+
+/*.decor-line-right{*/
+  /*width: 100%;*/
+  /*height: 15px;*/
+  /*background-size: contain;*/
+  /*transform: rotate(180deg);*/
+  /*background: url("../img/Group 124.png") no-repeat;*/
+/*}*/
+
 
 .img-description-product{
   width: 45%;
@@ -99,13 +142,29 @@
   font-size: 16px;
   text-align: left;
   line-height: 26px;
+
 }
 
 .text{
   width: 45%;
+  padding-top: 50px;
 }
 
+.product-dimensions{
+  width: 100%;
+  padding: 3%  0;
+}
 
+.slider{
+  width: 100%;
+  padding: 2% 0;
+  border: 1px solid gray;
+}
+
+.item-slide{
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 768px){
   .item-specifications-product{
     width: 50px;
