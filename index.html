@@ -8,10 +8,10 @@
   <title>Title</title>
 </head>
 <body>
-<main>
+<main class="root">
   <div class="decor-line decor-line-main"></div>
 
-  <div class="logo tablet-logo">
+  <div class="logo">
     <img src="img/logo.png" alt="logo-bosch">
   </div>
 
@@ -231,12 +231,43 @@
     <div class="style-text title-description-product margin">
       Дизайн
     </div>
+    <div class="slideshow-wrap">
+      <input type="radio" id="button-1" name="controls" checked="checked"/>
 
-  <div class="slider">
-    <img class="item-slide" src="img/sliderMCSA01873838_H0056_KGN39VW2AR_1293574_cmyk_def%202.png" alt="info-product-dimensions">
-  </div>
+      <input type="radio" id="button-2" name="controls"/>
+
+      <input type="radio" id="button-3" name="controls"/>
+
+      <input type="radio" id="button-4" name="controls"/>
+
+      <label for="button-1" class="arrows" id="arrow-1">></label>
+      <label for="button-2" class="arrows" id="arrow-2">></label>
+      <label for="button-3" class="arrows" id="arrow-3">></label>
+      <label for="button-4" class="arrows" id="arrow-4">></label>
+
+
+      <div class="slideshow-inner">
+        <div class="list-slade">
+          <div class="slade" id="slide1">
+            <img src="img/sliderMCSA01873838_H0056_KGN39VW2AR_1293574_cmyk_def%202.png" alt="item-slide" />
+          </div>
+
+          <div class="slade"  id="slide2">
+            <img src="img/slide2MCSA01873844_H0057_KGN39VW2AR_1293575_PGA5_def%202.png" />
+          </div>
+
+          <div class="slade" id="slide3">
+            <img src="img/slide3MCSA01873846_H0059_KGN39VW2AR_1293577_PGA2_def%202.png" />
+          </div>>
+
+          <div class="slade" id="slide4">
+            <img src="img/sl4MCSA01873847_H0060_KGN39VW2AR_1293578_PGA6_def%202.png" />
+          </div>
+
+        </div>
+      </div>
+    </div>
   </section>
-
 </main>
 <script src="js/main.js"></script>
 </body>
