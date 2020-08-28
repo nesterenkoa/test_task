@@ -74,6 +74,13 @@
   font-weight:900;
 }
 
+.clarifying-information{
+  font-size: 12px;
+  text-align: center;
+  padding: 8% 3%;
+  font-family: 'BOSCHSANS-LIGHT', sans-serif;
+}
+
 .wrapper{
   width: 100%
 }
@@ -128,10 +135,8 @@
 
 .slideshow-wrap {
   display: block;
-  height: 320px;
+  height: 620px;
   min-width: 260px;
-  max-width: 640px;
-  margin: auto;
   padding: 2%;
   border:1px solid gray;
   margin-top: 20px;
@@ -145,7 +150,7 @@
   position: relative;
 }
 
-.slideshow-inner > .list-slade {
+.slideshow-inner > .list-slide {
   list-style: none;
   height: 100%;
   width: 500%;
@@ -158,17 +163,16 @@
   transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.slideshow-inner>.list-slade>.slade {
+.slideshow-inner>.list-slide>.slide {
   width: 20%;
-  height: 320px;
   float: left;
   position: relative;
   text-align: center;
 }
 
-.slideshow-inner>.list-slade>.slade>img {
-  margin: auto;
-  height: 100%;
+.slideshow-inner>.list-slide>.slide>img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .slideshow-wrap input[type=radio] {
@@ -185,13 +189,13 @@
 
 .slideshow-wrap label[for=button-4] { margin-left: 18px }
 
-.slideshow-wrap input[type=radio]#button-1:checked~.slideshow-inner>.list-slade { left: 0 }
+.slideshow-wrap input[type=radio]#button-1:checked~.slideshow-inner>.list-slide { left: 0 }
 
-.slideshow-wrap input[type=radio]#button-2:checked~.slideshow-inner>.list-slade { left: -100% }
+.slideshow-wrap input[type=radio]#button-2:checked~.slideshow-inner>.list-slide { left: -100% }
 
-.slideshow-wrap input[type=radio]#button-3:checked~.slideshow-inner>.list-slade{ left: -200% }
+.slideshow-wrap input[type=radio]#button-3:checked~.slideshow-inner>.list-slide{ left: -200% }
 
-.slideshow-wrap input[type=radio]#button-4:checked~.slideshow-inner>.list-slade { left: -300% }
+.slideshow-wrap input[type=radio]#button-4:checked~.slideshow-inner>.list-slide { left: -300% }
 
 
 
@@ -244,6 +248,13 @@ input[type=radio]#button-3:checked~.arrows#arrow-2 { left: 26px }
 input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
 
 
+.footer-bgr{
+  background: url("../img/backgr.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+}
+
 /*Media Queries (js)*/
 .mobile  .title-product{
   font-size: 40px;
@@ -257,6 +268,10 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
   font-size: 16px;
 }
 
+.mobile .clarifying-information{
+  padding-top: 70px;
+}
+
 .mobile .d-flex{
     flex-direction:row;
     min-height: 600px;
@@ -265,11 +280,15 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
 .mobile .img-description-product {
   width: 45%;
   object-fit: contain;
+  order: 1;
+  margin: 0;
 }
 
 .mobile .text{
   width: 45%;
   padding-top: 50px;
+  order: 1;
+  margin: 0;
 }
 
 .mobile .logo{
