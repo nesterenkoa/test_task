@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 .decor-line{
   background: url("../img/line-color.png") no-repeat;
@@ -23,16 +24,19 @@
   height: 15px;
   background-size: contain;
   background: url("../img/Group 124.png") no-repeat;
+  margin-bottom: 22px;
 }
 
 .line-left{
    transform: rotate(180deg);
+   margin-bottom: 0;
+   margin-top: 22px;
 }
 
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 4px;
 }
 
 .padding{
@@ -58,6 +62,10 @@
   font-weight: 300;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .title-product{
   font-size: 5.5vw;
   padding: 0 5%;
@@ -67,7 +75,12 @@
 .title-description-product{
   font-size: 5vw;
   /*padding: 0 100px;*/
+  text-align: left;
   margin-bottom: 3%;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .model-product{
@@ -152,6 +165,8 @@
 
 .slideshow-inner > .list-slide {
   list-style: none;
+  display: flex;
+  align-items: center;
   height: 100%;
   width: 500%;
   overflow: hidden;
@@ -205,7 +220,6 @@ label.arrows {
   color: gray;
   position: absolute;
   top: 50%;
-  height: 100%;
   margin-top: -25px;
   display: none;
   opacity: 0.7;
@@ -256,6 +270,11 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
 }
 
 /*Media Queries (js)*/
+.mobile .padding{
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
 .mobile  .title-product{
   font-size: 40px;
 }
@@ -275,20 +294,18 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
 .mobile .d-flex{
     flex-direction:row;
     min-height: 600px;
+    align-items: center;
   }
 
 .mobile .img-description-product {
-  width: 45%;
+  width: 52%;
   object-fit: contain;
   order: 1;
-  margin: 0;
 }
 
 .mobile .text{
   width: 45%;
-  padding-top: 50px;
   order: 1;
-  margin: 0;
 }
 
 .mobile .logo{
@@ -301,3 +318,18 @@ input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 8px }
   width: 75px;
   height: 75px;
 }
+
+.small-pc .img-description-product {
+  width: 560px;
+  margin: 0 66px 0 0;
+}
+
+.small-pc .img-description-product:nth-child(even){
+  margin:0;
+}
+
+.small-pc .text:nth-child(odd){
+  margin: 0 66px 0 0;
+}
+
+

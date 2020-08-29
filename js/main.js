@@ -18,10 +18,10 @@ const resizeObserver = new ResizeObserver((entries) => {
       // element.classList.remove('mobile');
       element.classList.add('tablet');
     }
-    // if (width > 1100) {
+    if (width > 1100) {
     //   element.classList.remove('tablet');
-    //   element.classList.add('small-pc');
-    // }
+      element.classList.add('small-pc');
+    }
   })
 });
 
